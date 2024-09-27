@@ -1,7 +1,8 @@
 // src/api/posts.ts
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/api/posts';
+const API_ROUTE = process.env.REACT_APP_API_ROUTE;
+const API_URL = `${API_ROUTE}/api/posts`;
 
 // 게시글의 타입 정의
 export interface Post {
